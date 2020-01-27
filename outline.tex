@@ -1,0 +1,104 @@
+\section{Introduction}
+
+Scope question: given that there are dedicated papers planned on various aspects of system performance and the data management system, it seems like this paper might be focused on giving users a sense of what the LSST data looks like and science validation topics. 
+
+Question of whether this paper should focus on the ``static sky'', or also include the annual re-processing of individual visits to better characterize time-domain phenomena.
+If the spirit of this paper is more validation and a science-user audience, some verification plots might go into other papers.
+
+Examples:
+
+\begin{enumerate}
+\item DES DR1 arXiv:1801.03181
+\item DES Y1 Gold arXiv:1708.01531
+\item HSC DR1 arXiv:1702.08449
+\item HSC DR2 arXiv:1905.12221
+\item Gaia papers
+\end{enumerate}
+
+\section{Commissioning On-sky Observations}
+
+I think we want to have figures of the distribution of single-visit image quality (e.g., FWHM in each band), sky brightness in each band (e.g., FWHM in each band), and system throughput in each band (e.g., single-visit depth corresponding to SNR = 5 in each band). I am guessing these would go in ``Performance of Delivered LSST System'' (PSTN-032).
+
+Information on survey speed goes in ``Performance Verification of the LSST Survey Scheduler'' (PSTN-043).
+
+\subsection{Deep Field Observations}
+
+Let's hope we have at least one deep field.
+
+\subsection{Wide Area Observations}
+
+Let's hope we get multiband imaging of several hundred square degrees.
+
+\section{Data Release Processing}
+
+Focus on what was done specifically for the commissioning ok-sky observations.
+My understanding is that algorithmic details will be discussed in ``LSST Data Release Processing'' (PSTN-020).
+
+\section{Data Release Performance}
+
+\subsection{Integrated Astrometric Performance}
+
+Astrometric residuals as a function of, e.g., focal plane position in another paper?
+
+Focusing on the coadd, though perhaps it makes sense to discuss single-visit astrometry as well.
+Parallax and proper motion may be on longer timescale than that of commissioning observations.
+
+\subsection{Photometry}
+
+Photometric residuals as function of, e.g., focal plane position in another paper?
+
+Uniformity and colors in coadd.
+I figure the comparison to AB scale will be discussed elsewhere.
+
+Stellar locus in color space
+
+Galaxies in color space.
+
+\subsection{Depth}
+
+Focusing on the coadd.
+
+\subsubsection{Flux distribution}
+
+\subsubsection{Flux limit at fixed signal-to-noise}
+
+\subsubsection{Depth from image properties}
+
+\subsubsection{Object detection completeness}
+
+%\subsection{Object Detection}
+
+\subsection{Flagged Objects}
+
+Spurious objects, artifacts, etc.
+
+\subsection{Object Classification}
+
+Star-galaxy separation
+
+Density maps of stars and galaxies
+
+\subsection{Deblending}
+
+Dense stellar fields? Galaxy clusters? Deep coadd. Results from source injection.
+Not exactly sure where this should go, and how much detail to go into.
+
+\subsection{Image Quality and Object }
+
+Ellipticity correlations and weak lensing null tests here. 
+I'm thinking specifically about some demonstrations that the recovered shear is reasonable.
+
+\subsection{Photometric Redshifts}
+
+Potential science validation topic. Not clear that we will get this far during commissioning. Still, there are probably interesting comparisons to be done to assess galaxy colors.
+
+\subsection{Known Issues}
+
+Lets hope this section is short...
+
+\section{Release Products}
+
+\subsection{Images}
+
+\subsection{Catalogs}
+
