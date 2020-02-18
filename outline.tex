@@ -61,11 +61,11 @@ Heavily reference other construction papers here.
 
 \item Figure showing the footprint of the two fields
 
-\item Figure for distribution of single-visit image quality (e.g., FWHM) in each band.
+\item Figure for distribution of single-visit image quality (e.g., FWHM) in each band
 
-\item Figure for sky brightness in each band 
+\item Figure for sky brightness in each band (single-visit) 
 
-\item Figure for system throughput in each band (e.g., single-visit depth corresponding to SNR = 5 in each band).
+\item Figure for system throughput in each band (e.g., single-visit depth corresponding to SNR = 5 in each band)
 
 \end{itemize}
 
@@ -103,69 +103,154 @@ The intended focus of this paper is characterization of science performance for 
 
 \section{Scientific Characterization}
 
-\subsection{Integrated Astrometric Performance}
+\subsection{PSF modeling}
 
-Astrometric residuals as a function of, e.g., focal plane position in another paper?
+\begin{itemize}
 
-Focusing on the coadd, though perhaps it makes sense to discuss single-visit astrometry as well.
-Parallax and proper motion may be on longer timescale than that of commissioning observations.
+\item Series of plots to test PSF modeling
 
-\subsection{Photometry}
+\item PSF size residual across the focal plane
 
-Photometric residuals as function of, e.g., focal plane position in another paper?
+\item PSF size residuals versus flux
 
-Uniformity and colors in coadd.
-I figure the comparison to AB scale will be discussed elsewhere.
+\item PSF ellipticity correlations
 
-Stellar locus in color space
+\end{itemize}
 
-Galaxies in color space.
+\subsection{Astrometric Calibration}
 
-\subsection{Depth}
+\begin{itemize}
 
-Focusing on the coadd.
+\item Series of plots to test astrometric performance
 
-\subsubsection{Flux distribution}
+\item Single-visit astrometric repeatability
 
-\subsubsection{Flux limit at fixed signal-to-noise}
+\item Cross-band astrometric residuals
 
-\subsubsection{Depth from image properties}
+\item Single-visit astrometric residuals vs. Gaia across the focal plane
 
-\subsubsection{Object detection completeness}
+\item Single-visit astrometric residuals vs. Gaia to test DCR
+
+\item Histogram of astrometric residuals in the coadd vs. Gaia
+
+\end{itemize}
+
+%Astrometric residuals as a function of, e.g., focal plane position in another paper?
+
+%Focusing on the coadd, though perhaps it makes sense to discuss single-visit astrometry as well.
+%Parallax and proper motion may be on longer timescale than that of commissioning observations.
+
+\subsection{Photometric Calibration}
+
+\begin{itemize}
+
+\item Single-visit photometric repeatability (fluxes)
+
+\item Single-visit photometric repeatability (colors)
+
+\item Histogram of photometric residuals vs. Gaia (photometric uniformity)
+
+\item Photometric residuals across focal plane vs. Gaia
+
+\item Comments on the translation to physical scale, e.g., AB magnitude 
+
+\end{itemize}
+
+%Photometric residuals as function of, e.g., focal plane position in another paper?
+
+%Uniformity and colors in coadd.
+%I figure the comparison to AB scale will be discussed elsewhere.
+
+%Stellar locus in color space
+
+%Galaxies in color space.
 
 %\subsection{Object Detection}
 
-\subsection{Flagged Objects}
+\subsection{Object Detection}
 
-Spurious objects, artifacts, etc.
+\begin{itemize}
+
+\item Brief comments on deblending
+
+\item Residuals in images
+
+\item Suggested quality flags
+
+\item Spurious objects, artifacts, scattered light, ghosts, satellite trails, background level estimation, etc.
+
+\end{itemize}
+
+\subsection{Depth}
+
+%Focusing on the coadd.
+
+\note{Focusing on the coadd here because the single-visit depth will be covered in ``Performance of Delivered LSST System'' (PSTN-032).}
+
+\begin{itemize}
+
+\item Flux distribution of detected objects in the coadd
+
+\item Flux limit at fixed signal-to-noise
+
+\item Depth from image properties
+
+\item Object detection completeness
+
+\end{itemize}
 
 \subsection{Object Classification}
 
-Star-galaxy separation
+\begin{itemize}
 
-Density maps of stars and galaxies
+\item Figure of size-flux showing star-galaxy separation
 
-\subsection{Deblending}
+\item Completeness and purity for star-galaxy classification vs. space-based imaging and/or using near-IR
 
-Dense stellar fields? Galaxy clusters? Deep coadd. Results from source injection.
-Not exactly sure where this should go, and how much detail to go into.
+\item Density maps of stars and galaxies
 
-\subsection{Image Quality and Object }
+\item Stellar locus in color space
 
-Ellipticity correlations and weak lensing null tests here. 
-I'm thinking specifically about some demonstrations that the recovered shear is reasonable.
+\item Galaxies in color space
 
-\subsection{Photometric Redshifts}
+\end{itemize}
 
-Potential science validation topic. Not clear that we will get this far during commissioning. Still, there are probably interesting comparisons to be done to assess galaxy colors.
+\section {Known Issues}
 
-\subsection{Known Issues}
+\note{This section is a placeholder for anomalies of areas of ongoing investigation.}
 
-Lets hope this section is short...
+%\subsection{Deblending}
 
-\section{Release Products}
+%Dense stellar fields? Galaxy clusters? Deep coadd. Results from source injection.
+%Not exactly sure where this should go, and how much detail to go into.
 
-\subsection{Images}
+%\subsection{Image Quality and Object }
 
-\subsection{Catalogs}
+%Ellipticity correlations and weak lensing null tests here. 
+%I'm thinking specifically about some demonstrations that the recovered shear is reasonable.
 
+%\subsection{Photometric Redshifts}
+
+%Potential science validation topic. Not clear that we will get this far during commissioning. Still, there are probably interesting comparisons to be done to assess galaxy colors.
+
+%\subsection{Known Issues}
+
+%Lets hope this section is short...
+
+%\section{Release Products}
+
+%\subsection{Images}
+
+%\subsection{Catalogs}
+
+\section{Summary and Outlook}
+
+\begin{itemize}
+
+\item Brief summary of how demonstrated performance compares to expectations
+
+\item Extrapolating from these two fields to survey performance
+
+\item Brief description of additional commissioning observations 
+
+\end{itemize}
