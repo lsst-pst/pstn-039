@@ -1,6 +1,7 @@
 \section{Introduction}
 
-\note{We plan to produce a series of papers on science verification and validation leading up to the first LSST public data release (LSST DR1) occurring about 12 months into LSST science operations. We envision three stages of science verification papers:
+\note{We plan to produce a series of papers on science verification and validation leading up to the first LSST public data release (LSST DR1) occurring about 12 months into LSST science operations. 
+We envision three stages of science verification papers:
 
 \begin{enumerate}
 
@@ -11,6 +12,20 @@
 \item Papers supporting LSST DR1: These would be normal data release papers proving a more extensive characterization at survey scale.
 
 \end{enumerate}
+
+Due to the expected tight timeline for this paper, and the plan for additional papers appearing within a few months, topics that we are \emph{not} planning to address in this paper include:
+
+\begin{itemize}
+
+\item Description of data model, example queries, data access services, etc. 
+This paper is more of a first scientific characterization report than supporting a data release.
+
+\item Detailed description of science pipelines
+
+\item Absolute photometric calibration, detailed study of deblending, galaxy shape measurements and weak lensing shear, photometric redshifts, classification of transients, etc., and similar more ``science validation'' topics that would likely benefit from community interactions over a longer timeline than a few weeks.
+
+\end{itemize}
+
 }
 
 %Scope question: given that there are dedicated papers planned on various aspects of system performance and the data management system, it seems like this paper might be focused on giving users a sense of what the LSST data looks like and science validation topics. 
@@ -61,7 +76,7 @@ Heavily reference other construction papers here.
 
 \item Figure showing the footprint of the two fields
 
-\item Figure for distribution of single-visit image quality (e.g., FWHM) in each band
+\item Figure for distribution of single-visit image quality (e.g., FWHM) in each band, or perhaps image quality versus airmass
 
 \item Figure for sky brightness in each band (single-visit) 
 
@@ -129,7 +144,7 @@ The intended focus of this paper is characterization of science performance for 
 
 \item Single-visit astrometric residuals vs. Gaia across the focal plane
 
-\item Single-visit astrometric residuals vs. Gaia to test DCR
+\item Single-visit astrometric residuals vs. Gaia to test DCR (or other residuals vs. airmass, seeing, color of stars, etc.)
 
 \item Histogram of astrometric residuals in the coadd vs. Gaia
 
@@ -152,7 +167,11 @@ The intended focus of this paper is characterization of science performance for 
 
 \item Photometric residuals across focal plane vs. Gaia
 
+\item Photometric residuals vs. airmass, seeing, color of stars, etc.
+
 \item Comments on the translation to physical scale, e.g., AB magnitude 
+
+\item Photometry from different measurement methods for unresolved objects
 
 \end{itemize}
 
