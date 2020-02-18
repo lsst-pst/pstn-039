@@ -1,42 +1,107 @@
 \section{Introduction}
 
-\note{Here is a note}
-
-Scope question: given that there are dedicated papers planned on various aspects of system performance and the data management system, it seems like this paper might be focused on giving users a sense of what the LSST data looks like and science validation topics. 
-
-Question of whether this paper should focus on the ``static sky'', or also include the annual re-processing of individual visits to better characterize time-domain phenomena.
-If the spirit of this paper is more validation and a science-user audience, some verification plots might go into other papers.
-
-Examples:
+\note{We plan to produce a series of papers on science verification and validation leading up to the first LSST public data release (LSST DR1) occurring about 12 months into LSST science operations. We envision three stages of science verification papers:
 
 \begin{enumerate}
-\item DES DR1 arXiv:1801.03181
-\item DES Y1 Gold arXiv:1708.01531
-\item HSC DR1 arXiv:1702.08449
-\item HSC DR2 arXiv:1905.12221
-\item Gaia papers
+
+\item Papers supporting the Operational Readiness Review (ORR), \emph{including this paper}: Given expected time constraints between the start of sustained observations with LSSTCam and the ORR, we plan to keep the scope of these papers relatively modest and to focus on a more limited set of on-sky observations that can be acquired quickly (e.g., one week), and potentially reprocessed multiple times as science pipelines evolve during commissioning.
+
+\item Papers supporting Data Preview 2 (DP2): The next round of papers would go into further detail describing the distribution of delivered performance for the commissioning science verification surveys. A primary objective is to support the science community to use the DP2 data products.
+
+\item Papers supporting LSST DR1: These would be normal data release papers proving a more extensive characterization at survey scale.
+
 \end{enumerate}
+}
+
+%Scope question: given that there are dedicated papers planned on various aspects of system performance and the data management system, it seems like this paper might be focused on giving users a sense of what the LSST data looks like and science validation topics. 
+
+%Question of whether this paper should focus on the ``static sky'', or also include the annual re-processing of individual visits to better characterize time-domain phenomena.
+%If the spirit of this paper is more validation and a science-user audience, some verification plots might go into other papers.
+
+%Examples:
+
+%\begin{enumerate}
+%\item DES DR1 arXiv:1801.03181
+%\item DES Y1 Gold arXiv:1708.01531
+%\item HSC DR1 arXiv:1702.08449
+%\item HSC DR2 arXiv:1905.12221
+%\item Gaia papers
+%\end{enumerate}
+
+\begin{itemize}
+
+\item Paragraph to introduce the LSST, including the four main science drivers.
+
+\item Paragraph to describe how the science drivers translate to high-level requirements on scientific performance of the survey and flow-down to observatory specifications, written a level to be intelligible to a general scientific audience. 
+
+\item Paragraph to give a brief description of commissioning on-sky observations, introducing the selection of on-sky observations analyzed in this work. 
+Plan to focus on an LSST Deep Drilling Field and a dense stellar field, each taken to approximately the LSST 10-year depth in multiple bands, with the visits concentrated over a few nights. 
+The purpose is to get an early evaluation of delivered data quality from the Rubin Observatory.
+
+\item Summary table of selected commissioning observations and delivered performance including band coverage, area coverage, number of visits, single-epoch depth, coadded-depth, astrometric and photometric calibration, ...
+
+\item Pointers to other relevant Rubin Observatory construction papers for context
+
+\end{itemize}
 
 \section{Commissioning On-sky Observations}
 
-I think we want to have figures of the distribution of single-visit image quality (e.g., FWHM in each band), sky brightness in each band (e.g., FWHM in each band), and system throughput in each band (e.g., single-visit depth corresponding to SNR = 5 in each band). I am guessing these would go in ``Performance of Delivered LSST System'' (PSTN-032).
+\subsection{Instrumentation}
 
-Information on survey speed goes in ``Performance Verification of the LSST Survey Scheduler'' (PSTN-043).
+Paragraph on the state of the system at the time of observations.
+Heavily reference other construction papers here.
 
-\subsection{Deep Field Observations}
+\subsection{Observations}
 
-Let's hope we have at least one deep field.
+\begin{itemize}
 
-\subsection{Wide Area Observations}
+\item Selection and observations of the Deep Drilling Field
 
-Let's hope we get multiband imaging of several hundred square degrees.
+\item Selection and observations of the dense stellar field
 
-\section{Data Release Processing}
+\item Figure showing the footprint of the two fields
 
-Focus on what was done specifically for the commissioning ok-sky observations.
-My understanding is that algorithmic details will be discussed in ``LSST Data Release Processing'' (PSTN-020).
+\item Figure for distribution of single-visit image quality (e.g., FWHM) in each band.
 
-\section{Data Release Performance}
+\item Figure for sky brightness in each band 
+
+\item Figure for system throughput in each band (e.g., single-visit depth corresponding to SNR = 5 in each band).
+
+\end{itemize}
+
+
+%I think we want to have figures of the distribution of single-visit image quality (e.g., FWHM in each band), sky brightness in each band (e.g., FWHM in each band), and system throughput in each band (e.g., single-visit depth corresponding to SNR = 5 in each band). I am guessing these would go in ``Performance of Delivered LSST System'' (PSTN-032).
+
+\note{Information on system modeling goes into ``Performance of Delivered LSST System'' (PSTN-032). 
+Information on survey speed goes in ``Performance Verification of the LSST Survey Scheduler'' (PSTN-043).}
+
+%\subsection{Deep Field Observations}
+
+%Let's hope we have at least one deep field.
+
+%\subsection{Wide Area Observations}
+
+%Let's hope we get multiband imaging of several hundred square degrees.
+
+\section{Data Processing}
+
+\note{Heavily reference papers on data management system and science pipelines specifically.  
+It may be that construction papers such as ``LSST Data Release Processing'' (PSTN-020) will appear later, e.g., around DP2.
+The amount of detail in this section depends on the data management domain construction papers.
+The intended focus of this paper is characterization of science performance for on-sky data rather than a description of the science pipelines.}
+
+%Focus on what was done specifically for the commissioning ok-sky observations.
+%My understanding is that algorithmic details will be discussed in ``LSST Data Release Processing'' (PSTN-020).
+
+\begin{itemize}
+
+\item Brief description of science pipelines, including outline of stages of processing.
+
+\item Figure to show coadded color-image of each field, zoomed in enough to see some details that data processing generally looks reasonable.
+
+\end{itemize}
+
+\section{Scientific Characterization}
 
 \subsection{Integrated Astrometric Performance}
 
