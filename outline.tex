@@ -1,0 +1,282 @@
+\section{Introduction}
+
+\note{We plan to produce a series of papers on science verification and validation leading up to the first LSST public data release (LSST DR1) occurring about 12 months into LSST science operations. 
+We envision three stages of science verification papers:
+
+\begin{enumerate}
+
+\item Papers supporting the Operational Readiness Review (ORR), \emph{including this paper}: Given expected time constraints between the start of sustained observations with LSSTCam and the ORR, we plan to keep the scope of these papers relatively modest and to focus on a more limited set of on-sky observations that can be acquired quickly (e.g., one week), and potentially reprocessed multiple times as science pipelines evolve during commissioning.
+
+\item Papers supporting Data Preview 2 (DP2): The next round of papers would go into further detail describing the distribution of delivered performance for the commissioning science verification surveys. A primary objective is to support the science community to use the DP2 data products.
+
+\item Papers supporting LSST DR1: These would be normal data release papers proving a more extensive characterization at survey scale.
+
+\end{enumerate}
+
+Due to the expected tight timeline for this paper, and the plan for additional papers appearing within a few months, topics that we are \emph{not} planning to address in this paper include:
+
+\begin{itemize}
+
+\item Description of data model, example queries, data access services, etc. 
+This paper is more of a first scientific characterization report than supporting a data release.
+
+\item Detailed description of science pipelines
+
+\item Absolute photometric calibration, detailed study of deblending, galaxy shape measurements and weak lensing shear, photometric redshifts, classification of transients, etc., and similar ``science validation'' topics that would likely benefit from community interactions over a longer timeline than a few weeks.
+
+\end{itemize}
+
+We should start planning the outlines of papers associated with DP2 soon so that we have a more clear overall vision for the series of early science verification and validation papers.
+Note that the current set of construction papers does not have a paper dedicated to science performance evaluation of ComCam.
+Given the expected commissioning schedule and planned set of papers mentioned above, we would prefer to focus the publications on characterization of the observatory performance with the LSST Camera.
+Of course we plan to test as many analysis procedures as possible with ComCam and to document the results of those tests, at least internally.
+
+}
+
+%Scope question: given that there are dedicated papers planned on various aspects of system performance and the data management system, it seems like this paper might be focused on giving users a sense of what the LSST data looks like and science validation topics. 
+
+%Question of whether this paper should focus on the ``static sky'', or also include the annual re-processing of individual visits to better characterize time-domain phenomena.
+%If the spirit of this paper is more validation and a science-user audience, some verification plots might go into other papers.
+
+%Examples:
+
+%\begin{enumerate}
+%\item DES DR1 arXiv:1801.03181
+%\item DES Y1 Gold arXiv:1708.01531
+%\item HSC DR1 arXiv:1702.08449
+%\item HSC DR2 arXiv:1905.12221
+%\item Gaia papers
+%\end{enumerate}
+
+\begin{itemize}
+
+\item Paragraph to introduce the LSST, including the four main science drivers.
+
+\item Paragraph to describe how the science drivers translate to high-level requirements on scientific performance of the survey and flow-down to observatory specifications, written a level to be intelligible to a general scientific audience. 
+
+\item Paragraph to give a brief description of commissioning on-sky observations, introducing the selection of on-sky observations analyzed in this work. 
+Plan to focus on an LSST Deep Drilling Field and a dense stellar field, each taken to approximately the LSST 10-year depth in multiple bands, with the visits concentrated over a few nights. 
+The purpose is to get an early evaluation of delivered data quality from the Rubin Observatory.
+
+\item Summary table of selected commissioning observations and delivered performance including band coverage, area coverage, number of visits, single-epoch depth, coadded-depth, astrometric and photometric calibration, ...
+
+\item Pointers to other relevant Rubin Observatory construction papers for context
+
+\end{itemize}
+
+\section{Commissioning On-sky Observations}
+
+\subsection{Instrumentation}
+
+Paragraph on the state of the system at the time of observations.
+Heavily reference other construction papers here.
+
+\subsection{Observations}
+
+\begin{itemize}
+
+\item Selection and observations of the Deep Drilling Field
+
+\item Selection and observations of the dense stellar field
+
+\item Figure showing the footprint of the two fields
+
+\item Figure for distribution of single-visit image quality (e.g., FWHM) in each band, or perhaps image quality versus airmass
+
+\item Figure for sky brightness in each band (single-visit) 
+
+\item Figure for system throughput in each band (e.g., single-visit depth corresponding to SNR = 5 in each band)
+
+\end{itemize}
+
+
+%I think we want to have figures of the distribution of single-visit image quality (e.g., FWHM in each band), sky brightness in each band (e.g., FWHM in each band), and system throughput in each band (e.g., single-visit depth corresponding to SNR = 5 in each band). I am guessing these would go in ``Performance of Delivered LSST System'' (PSTN-032).
+
+\note{Information on system modeling goes into ``Performance of Delivered LSST System'' (PSTN-032). 
+Information on survey speed goes in ``Performance Verification of the LSST Survey Scheduler'' (PSTN-043).}
+
+%\subsection{Deep Field Observations}
+
+%Let's hope we have at least one deep field.
+
+%\subsection{Wide Area Observations}
+
+%Let's hope we get multiband imaging of several hundred square degrees.
+
+\section{Data Processing}
+
+\note{Heavily reference papers on data management system and science pipelines specifically.  
+It may be that construction papers such as ``LSST Data Release Processing'' (PSTN-020) will appear later, e.g., around DP2.
+The amount of detail in this section depends on the data management domain construction papers.
+The intended focus of this paper is characterization of science performance for on-sky data rather than a description of the science pipelines.}
+
+%Focus on what was done specifically for the commissioning ok-sky observations.
+%My understanding is that algorithmic details will be discussed in ``LSST Data Release Processing'' (PSTN-020).
+
+\begin{itemize}
+
+\item Brief description of science pipelines, including outline of stages of processing.
+
+\item Figure to show coadded color-image of each field, zoomed in enough to see some details that data processing generally looks reasonable.
+
+\end{itemize}
+
+\section{Scientific Characterization}
+
+\note{Scientific characterization of difference image analysis and alert production to appear in ``Science Validation of LSST Alert Processing'' (PSTN-038).}
+
+\subsection{PSF modeling}
+
+\begin{itemize}
+
+\item Series of plots to test PSF modeling
+
+\item PSF size and ellipticity residual across the focal plane
+
+\item PSF size residuals versus flux
+
+\item PSF ellipticity correlations
+
+\end{itemize}
+
+\subsection{Astrometric Calibration}
+
+\begin{itemize}
+
+\item Series of plots to test astrometric performance
+
+\item Single-visit astrometric repeatability
+
+\item Cross-band astrometric residuals
+
+\item Single-visit astrometric residuals vs. Gaia across the focal plane
+
+\item Single-visit astrometric residuals vs. Gaia to test DCR (or other residuals vs. airmass, seeing, color of stars, etc.)
+
+\item Histogram of astrometric residuals in the coadd vs. Gaia
+
+\end{itemize}
+
+%Astrometric residuals as a function of, e.g., focal plane position in another paper?
+
+%Focusing on the coadd, though perhaps it makes sense to discuss single-visit astrometry as well.
+%Parallax and proper motion may be on longer timescale than that of commissioning observations.
+
+\subsection{Photometric Calibration}
+
+\begin{itemize}
+
+\item Single-visit photometric repeatability (fluxes)
+
+\item Single-visit photometric repeatability (colors)
+
+\item Histogram of photometric residuals vs. Gaia (photometric uniformity)
+
+\item Photometric residuals across focal plane vs. Gaia
+
+\item Photometric residuals vs. airmass, seeing, color of stars, etc.
+
+\item Comments on the translation to physical scale, e.g., AB magnitude 
+
+\item Photometry from different measurement methods for unresolved objects
+
+\end{itemize}
+
+%Photometric residuals as function of, e.g., focal plane position in another paper?
+
+%Uniformity and colors in coadd.
+%I figure the comparison to AB scale will be discussed elsewhere.
+
+%Stellar locus in color space
+
+%Galaxies in color space.
+
+%\subsection{Object Detection}
+
+\subsection{Object Detection}
+
+\begin{itemize}
+
+\item Brief comments on deblending
+
+\item Residuals in images
+
+\item Suggested quality flags
+
+\item Spurious objects, artifacts, scattered light, ghosts, satellite trails, background level estimation, etc.
+
+\end{itemize}
+
+\subsection{Depth}
+
+%Focusing on the coadd.
+
+\note{Focusing on the coadd here because the single-visit depth will be covered in ``Performance of Delivered LSST System'' (PSTN-032).}
+
+\begin{itemize}
+
+\item Flux distribution of detected objects in the coadd
+
+\item Flux limit at fixed signal-to-noise
+
+\item Depth from image properties
+
+\item Object detection completeness
+
+\end{itemize}
+
+\subsection{Object Classification}
+
+\begin{itemize}
+
+\item Figure of size-flux showing star-galaxy separation
+
+\item Completeness and purity for star-galaxy classification vs. space-based imaging and/or using near-IR
+
+\item Density maps of stars and galaxies
+
+\item Stellar locus in color space
+
+\item Galaxies in color space
+
+\end{itemize}
+
+\section {Known Issues}
+
+\note{This section is a placeholder for anomalies of areas of ongoing investigation.}
+
+%\subsection{Deblending}
+
+%Dense stellar fields? Galaxy clusters? Deep coadd. Results from source injection.
+%Not exactly sure where this should go, and how much detail to go into.
+
+%\subsection{Image Quality and Object }
+
+%Ellipticity correlations and weak lensing null tests here. 
+%I'm thinking specifically about some demonstrations that the recovered shear is reasonable.
+
+%\subsection{Photometric Redshifts}
+
+%Potential science validation topic. Not clear that we will get this far during commissioning. Still, there are probably interesting comparisons to be done to assess galaxy colors.
+
+%\subsection{Known Issues}
+
+%Lets hope this section is short...
+
+%\section{Release Products}
+
+%\subsection{Images}
+
+%\subsection{Catalogs}
+
+\section{Summary and Outlook}
+
+\begin{itemize}
+
+\item Brief summary of how demonstrated performance compares to expectations
+
+\item Extrapolating from these two fields to survey performance
+
+\item Brief description of additional commissioning observations 
+
+\end{itemize}
